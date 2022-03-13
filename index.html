@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="https://plentz.github.io/jquery-maskmoney/javascripts/jquery.maskMoney.min.js"
+      type="text/javascript"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="principal">
+      <h1>Simulador de juros compostos com aumento anual nos aportes</h1><br>
+      <label for="initial-value-input">
+        Valor inicial
+        <div>
+          <h4>R$</h4>
+          <input type="text" id="initial-value-input" placeholder="R$ 0,00" />
+        </div>
+      </label>
+	  <br>
+      <label for="capital-injection-input">
+        Aportes mensais
+        <div>
+          <h4>R$</h4>
+
+          <input
+            type="text"
+            id="capital-injection-input"
+            placeholder="R$ 0,00"
+          />
+        </div>
+      </label>
+	  <br>
+      <label for="growth-rate-input">
+        Taxa de crescimento anual de aportes
+        <div>
+          <h4 style="font-size:18px;">%</h4>
+          <input type="text" id="growth-rate-input" placeholder="0%" />
+        </div>
+      </label>
+	  <br>
+      <select name="results-interval" id="results-interval">
+        <option value="invalid" selected disabled>
+          Escolha um período para seu cálculo
+        </option>
+        <option value="yearly">Anual</option>
+        <option value="monthly">Mensal</option>
+      </select>
+	  <br><br>
+      <label for="interest-rate-input">
+        <span class="interest-span">Taxa de juros</span>
+        <div>
+          <h4 style="font-size:18px;">%</h4>
+          <input type="text" id="interest-rate-input" placeholder="0%" />
+        </div>
+      </label>
+	  <br>
+      <label for="total-period-input">
+        <span class="period-span">Tempo de investimento</span>
+        <input
+          type="number"
+          id="total-period-input"
+          placeholder="duração de investimento"
+        />
+      </label>
+		<br>
+      <div class="buttons">
+        <button type="submit" id="calculate-button">CALCULAR</button>
+        <button type="reset" id="clean-button">LIMPAR</button>
+      </div>
+    
+	<br>
+    <div class="results">
+      <div>
+        <h3>VALOR TOTAL FINAL</h3>
+        <div id="total-result"></div>
+      </div>
+	 </div>
+	  <br>
+	 <div class="results">
+      <div>
+        <h3>VALOR TOTAL INVESTIDO</h3>
+        <div id="total-invested"></div>
+      </div>
+	 </div>
+	  <br>
+	 <div class="results">
+      <div>
+        <h3>TOTAL EM JUROS</h3>
+        <div id="total-interests"></div>
+      </div>
+    </div>
+	<br>
+	</div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
