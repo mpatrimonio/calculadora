@@ -1,0 +1,186 @@
+.principal{
+  width:40%;
+  margin: 0 auto 0 auto;
+  background-color: yellow;
+}
+
+div {
+  flex-direction: column;
+  font-family: Trebuchet MS, sans-serif;
+}
+input,
+select {
+  width: 100%;
+  padding: 16px 15px;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #f1f1f1;
+  font-size:16px;
+  font-weight: bold;
+}
+label {
+  font-style:bold;
+  flex-direction: column;
+}
+
+
+h1{
+	width: 100%;
+	text-align: center;
+}
+
+h3{
+  font-family: Trebuchet MS, sans-serif;
+  font-size:16px;
+  font-weight: bold;
+  color: #696969;
+}
+
+#calculate-button{
+  width: 100%;
+  padding:15px 0px;
+  margin: 10px 5px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size:18px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  background-color:#008CBA;
+  color:white;
+}
+
+#clean-button{
+  width: 100%;
+  padding:15px 0px;
+  margin: 10px 5px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size:18px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  background-color:#e7e7e7;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#clean-button:hover{
+	background-color:#555555;
+	color: white;
+	cursor:pointer;
+}
+
+#calculate-button:hover{
+	background-color:#015c7a;
+	color: white;
+	cursor:pointer;
+}
+
+#clean-button:active{
+	background-color:black;
+}
+
+#calculate-button:active{
+	background-color:black;
+}
+
+.results {
+  background-color: #d3d3d3;
+  width: 100%;
+  text-align:center;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+
+
+label div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+label div span {
+  margin: auto;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #e6e6e6;
+  padding: 10px;
+  border: 2px solid #e6e6e6;
+  flex-direction: row;
+}
+
+label div h4 {
+  margin: auto;
+  background-color: #e6e6e6;
+  padding: 13px;
+  font-weight: bold;
+  color: #5F5C6B;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+input[type=number] {
+  display:flex;
+  flex-direction: row;
+  width: 96%;
+  font-size:16px;
+  font-weight: bold;
+  margin: 8px 0px 0px 0px;
+  background-color: white;
+}
+
+#total-period-input{
+  padding-left: 4%;
+  padding-right: 0;
+}
+
+input[type=text] {
+  width: 100%;
+  font-family: Trebuchet MS, sans-serif;
+  font-size:16px;
+  font-weight: bold;
+  background-color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1.5px solid #e6e6e6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 1px solid #555;
+}
+
+#total-result{
+	font-weight:bold;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+#total-invested{
+	font-weight:bold;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+#total-interests{
+	font-weight:bold;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
