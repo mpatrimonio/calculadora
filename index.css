@@ -211,7 +211,7 @@ input[type=text]:focus {
   }
 
   label div span, label div h4 {
-    padding: 12px; /* Ajusta o padding para manter o conteúdo visível e acessível */
+    padding: 13px; /* Ajusta o padding para manter o conteúdo visível e acessível */
   }
 
   h1 {
